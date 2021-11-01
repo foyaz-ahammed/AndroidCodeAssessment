@@ -1,4 +1,4 @@
-plugins {
+    plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
@@ -12,7 +12,8 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
+        buildConfigField "String", "API_PUBLIC_KEY", "\"78775c5e2256d471e9f4aa479c25c2dd\""
+        buildConfigField "String", "API_PRIVATE_KEY", "\"74606a691944cf7c63d571ab5963539eb6a4fa36\""
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
